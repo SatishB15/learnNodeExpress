@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "formidable": "^2.0.1",
+    "fs": "0.0.1-security",
     "mysql": "^2.18.1"
   },
   "devDependencies": {},
