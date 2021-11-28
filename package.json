@@ -1,0 +1,23 @@
+{
+  "name": "learnnodeexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SatishB15/learnNodeExpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SatishB15/learnNodeExpress/issues"
+  },
+  "homepage": "https://github.com/SatishB15/learnNodeExpress#readme"
+}
