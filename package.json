@@ -1,9 +1,9 @@
 {
   "name": "learnnodeexpress",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
+    "events": "^3.3.0",
     "formidable": "^2.0.1",
     "fs": "0.0.1-security",
     "mysql": "^2.18.1",
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/SatishB15/learnNodeExpress/issues"
   },
-  "homepage": "https://github.com/SatishB15/learnNodeExpress#readme"
+  "homepage": "https://github.com/SatishB15/learnNodeExpress#readme",
+  "description": ""
 }
