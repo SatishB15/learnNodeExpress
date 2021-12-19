@@ -1,12 +1,20 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express');
+const path = require('path');
 
-http.createServer(function (req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    fs.readFile('./webpage.html', function (err, data) {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(data);
-        res.end();
-    });
-}).listen(8080);
-console.log("running on port 8080");
+const app = express();
+app.use(express.static(__dirname));
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/recipies.html');
+});
+app.get('/pizza', function (req, res) {
+    res.sendFile(__dirname + '/pizza.html');
+});
+app.get('/burger', function (req, res) {
+    res.sendFile(__dirname + '/burger.html');
+});
+app.get('/chicken', function (req, res) {
+    res.sendFile(__dirname + '/chicken.html');
+});
+app.listen(5000);
+
+console.log('Running at Port 5000');
