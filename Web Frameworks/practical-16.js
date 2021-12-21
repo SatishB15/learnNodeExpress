@@ -1,10 +1,10 @@
-var http = require('http');
-var fs = require('fs');
-http.createServer(function (req, res) {
-    //Open a file on the server and return its content:
-    fs.readFile('webpage.html', function (err, data) {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(data);
-        return res.end();
-    });
-}).listen(8080);
+const express = require('express');
+const path = require('path');
+
+const app = express();
+app.use(express.static(__dirname));
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/webpage.html');
+});
+
+app.listen(5000);
